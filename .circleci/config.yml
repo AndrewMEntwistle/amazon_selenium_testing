@@ -56,4 +56,4 @@ jobs:
           destination: test-results
 
       - store_test_results:
-          path: test-results
+          path: reports
