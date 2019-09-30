@@ -7,8 +7,10 @@ from selenium import webdriver
 def selenium_browser_chrome(context):
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--incognito")
-    # context.browser = webdriver.Chrome(os.environ.get('WEBDRIVER'), chrome_options=chrome_options)
-    context.browser = webdriver.Chrome()
+    if os.environ.get('WEBDRIVER'):
+        context.browser = webdriver.Chrome(os.environ.get('WEBDRIVER'), chrome_options=chrome_options)
+    else:
+        context.browser = webdriver.Chrome(chrome_options=chrome_options)
     yield context.browser
     context.browser.quit()
 
