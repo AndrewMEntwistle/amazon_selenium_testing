@@ -48,8 +48,11 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            python features/testAllFeatures.py
+            python features/test_product_page_feature.py
 
       - store_artifacts:
           path: test-reports
           destination: test-reports
+
+      - store_test_results:
+          path: test_results
