@@ -1,7 +1,8 @@
 from behave import *
+
 from pages.homepage import Homepage
-from pages.search_results_page import SearchResultsPage
 from pages.product_page import ProductPage
+from pages.search_results_page import SearchResultsPage
 
 
 @given('I navigate to the homepage')
@@ -34,7 +35,8 @@ def step_impl(context, rating):
     product_page.assert_star_rating(rating)
 
 
-@then('The first item in the "customers who bought this item also bought" section is {first_item_customers_also_bought}')
+@then(
+    'The first item in the "customers who bought this item also bought" section is {first_item_customers_also_bought}')
 def step_impl(context, first_item_customers_also_bought):
     product_page = ProductPage(context.browser)
     product_page.assert_first_item_customers_also_bought(first_item_customers_also_bought)

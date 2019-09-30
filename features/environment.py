@@ -1,6 +1,6 @@
+import os
 from behave import fixture, use_fixture
 from selenium import webdriver
-import os
 
 
 @fixture
