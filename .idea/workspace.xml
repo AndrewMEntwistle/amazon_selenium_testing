@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9519a59e-1ce6-42d3-974a-51ff112912d4" name="Default Changelist" comment="" />
+    <list default="true" id="9519a59e-1ce6-42d3-974a-51ff112912d4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569845448839</updated>
       <workItem from="1569869091512" duration="248000" />
-      <workItem from="1569869837269" duration="5377000" />
+      <workItem from="1569869837269" duration="6296000" />
     </task>
     <task id="LOCAL-00001" summary="Setup environment variable for the Chromedriver">
       <created>1569870316549</created>
@@ -181,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569875248809</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated to config to .yml">
+      <created>1569875436246</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569875436246</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +214,8 @@
     <MESSAGE value="Setup environment variable for the Chromedriver" />
     <MESSAGE value="Completed script for test" />
     <MESSAGE value="Added requirements and config.yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added requirements and config.yaml" />
+    <MESSAGE value="Updated to config to .yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated to config to .yml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/amazon_selenium_testing$testAllFeatures__1_.coverage" NAME="testAllFeatures (1) Coverage Results" MODIFIED="1569874280371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/features" />
