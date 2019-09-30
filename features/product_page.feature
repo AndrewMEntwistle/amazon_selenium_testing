@@ -10,4 +10,4 @@ Feature: checking price, stars and "customers who bought this item also bought" 
 
         Examples: I Learned The Hard Way
             | search_term  | product                | price  | rating | first_customers_also_bought    |
-            | Sharon Jones | I Learned The Hard Way | £11.59 | 4.5    | Give The People What They Want |
+            | Sharon Jones | I Learned the Hard Way | $9.99 | 4.5    | Give The People What They Want |

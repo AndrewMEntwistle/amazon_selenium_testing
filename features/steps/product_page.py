@@ -1,29 +1,37 @@
 from behave import *
+from pages.homepage import Homepage
+from pages.search_results_page import SearchResultsPage
+from pages.product_page import ProductPage
 
 
 @given('I navigate to the homepage')
 def step_impl(context):
-    context.browser.get('https://www.amazon.com/')
+    homepage = Homepage(context.browser)
+    homepage.navigate_to()
 
 
 @given('I search for {search_term}')
 def step_impl(context, search_term):
-    pass
+    homepage = Homepage(context.browser)
+    homepage.search(search_term)
 
 
 @when('I select {product}')
-def step_impl(context,):
-    assert True is not False
+def step_impl(context, product):
+    search_results_page = SearchResultsPage(context.browser)
+    search_results_page.select_product(product)
 
 
 @then('The price of the "Audio CD" is {price}')
-def step_impl(context):
-    assert context.failed is False
+def step_impl(context, price):
+    product_page = ProductPage(context.browser)
+    product_page.assert_price_of_audio_cd(price)
 
 
 @then('The star rating is {rating}')
-def step_impl(context):
-    assert context.failed is False
+def step_impl(context, rating):
+    product_page = ProductPage(context.browser)
+    product_page.assert_star_rating(rating)
 
 
 @then('The first item in the "customers who bought this item also bought" section is {first_customers_also_bought}')
