@@ -8,8 +8,8 @@ from .basepage import BasePage
 
 class ProductPage(BasePage):
 
-    def __init__(self, driver):
-        super(ProductPage, self).__init__(driver)
+    def __init__(self, webdriver):
+        super(ProductPage, self).__init__(webdriver)
 
     def wait_until_page_loaded(self):
         self.wait.until(

@@ -11,6 +11,7 @@ def selenium_browser_chrome(context):
         context.browser = webdriver.Chrome(os.environ.get('WEBDRIVER'), chrome_options=chrome_options)
     else:
         context.browser = webdriver.Chrome(chrome_options=chrome_options)
+    context.browser.implicitly_wait(10)
     yield context.browser
     context.browser.quit()
 

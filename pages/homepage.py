@@ -8,8 +8,8 @@ from .search_results_page import SearchResultsPage
 
 class Homepage(BasePage):
 
-    def __init__(self, driver):
-        super(Homepage, self).__init__(driver)
+    def __init__(self, webdriver):
+        super(Homepage, self).__init__(webdriver)
         self.search_bar = '#twotabsearchtextbox'
 
     def navigate_to(self):
