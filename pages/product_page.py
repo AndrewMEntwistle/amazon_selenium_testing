@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from .basepage import BasePage
 from hamcrest import assert_that, equal_to
+from selenium.webdriver.common.action_chains import ActionChains
 
 
 class ProductPage(BasePage):
@@ -24,3 +25,13 @@ class ProductPage(BasePage):
         rating_text = self.browser.find_element_by_css_selector('#acrPopover').get_attribute('title')
         found_rating = rating_text[0:3]
         assert_that(found_rating, equal_to(expected_rating))
+
+    def assert_first_item_customers_also_bought(self, first_item_customers_also_bought):
+        actions = ActionChains(self.browser)
+        first_carousel_item = self.browser.find_element_by_css_selector(
+            "li[class='a-carousel-card'][aria-posinset='1']")
+        actions.move_to_element(first_carousel_item).perform()
+        first_carousel_item = self.browser.find_element_by_css_selector(
+            "li[class='a-carousel-card'][aria-posinset='1']")
+        first_item_text = first_carousel_item.find_element_by_xpath("./a/span").text
+        assert_that(first_item_text, equal_to(first_item_customers_also_bought))

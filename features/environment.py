@@ -5,7 +5,9 @@ import os
 
 @fixture
 def selenium_browser_chrome(context):
-    context.browser = webdriver.Chrome(os.environ.get('WEBDRIVER'))
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument("--incognito")
+    context.browser = webdriver.Chrome(os.environ.get('WEBDRIVER'), chrome_options=chrome_options)
     yield context.browser
     context.browser.quit()
 

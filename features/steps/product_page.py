@@ -34,6 +34,7 @@ def step_impl(context, rating):
     product_page.assert_star_rating(rating)
 
 
-@then('The first item in the "customers who bought this item also bought" section is {first_customers_also_bought}')
-def step_impl(context):
-    assert context.failed is False
+@then('The first item in the "customers who bought this item also bought" section is {first_item_customers_also_bought}')
+def step_impl(context, first_item_customers_also_bought):
+    product_page = ProductPage(context.browser)
+    product_page.assert_first_item_customers_also_bought(first_item_customers_also_bought)

@@ -6,8 +6,8 @@ Feature: checking price, stars and "customers who bought this item also bought" 
         When I select <product>
         Then The price of the "Audio CD" is <price>
         And The star rating is <rating>
-        And The first item in the "customers who bought this item also bought" section is <first_customers_also_bought>
+        And The first item in the "customers who bought this item also bought" section is <first_item_customers_also_bought>
 
         Examples: I Learned The Hard Way
-            | search_term  | product                | price  | rating | first_customers_also_bought    |
-            | Sharon Jones | I Learned the Hard Way | $9.99 | 4.5    | Give The People What They Want |
+            | search_term  | product                | price  | rating | first_item_customers_also_bought |
+            | Sharon Jones | I Learned the Hard Way | $9.99  | 4.5    | Soul Time!                       |
