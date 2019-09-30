@@ -19,7 +19,6 @@ jobs:
 
     steps:
       - checkout
-      #- run: mkdir test-results
 
       # Download and cache dependencies
       - restore_cache:
