@@ -1,8 +1,9 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
-from .search_results_page import SearchResultsPage
+from selenium.webdriver.support import expected_conditions as EC
+
 from .basepage import BasePage
+from .search_results_page import SearchResultsPage
 
 
 class Homepage(BasePage):
@@ -20,9 +21,3 @@ class Homepage(BasePage):
         search_bar = self.browser.find_element_by_css_selector(self.search_bar)
         search_bar.send_keys(search_term, Keys.RETURN)
         search_results_page.wait_until_page_loaded()
-
-
-
-
-
-
