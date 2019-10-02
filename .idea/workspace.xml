@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9519a59e-1ce6-42d3-974a-51ff112912d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/product_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/product_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/basepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/basepage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/homepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/homepage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/product_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/product_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/search_results_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/search_results_page.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Setup Script" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -54,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Behave.product_page.feature">
+  <component name="RunManager" selected="Python.product_page">
     <configuration name="product_page.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="amazon_selenium_testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,7 +142,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Behave.product_page.feature" />
         <item itemvalue="Python.testAllFeatures (1)" />
         <item itemvalue="Python.testAllFeatures" />
         <item itemvalue="Python.product_page" />

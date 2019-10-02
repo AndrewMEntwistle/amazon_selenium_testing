@@ -35,4 +35,4 @@ def step_impl(context, rating):
 @then(
     'The first item in the "customers who bought this item also bought" section is {first_item_customers_also_bought}')
 def step_impl(context, first_item_customers_also_bought):
-    context.product_page.assert_first_item_customers_also_bought(first_item_customers_also_bought)
+    context.product_page.assert_first_item_in_customers_also_bought(first_item_customers_also_bought)

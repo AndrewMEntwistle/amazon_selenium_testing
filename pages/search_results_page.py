@@ -7,8 +7,8 @@ from .product_page import ProductPage
 
 class SearchResultsPage(BasePage):
 
-    def __init__(self, webdriver):
-        super(SearchResultsPage, self).__init__(webdriver)
+    def __init__(self, driver):
+        super(SearchResultsPage, self).__init__(driver)
 
     def wait_until_page_loaded(self):
         self.wait.until(
