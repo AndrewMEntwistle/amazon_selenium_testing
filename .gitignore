@@ -1,23 +1,4 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
-
-@AndrewMEntwistle
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-1
-00AndrewMEntwistle/basic_django_app Private
- Code Issues 0 Pull requests 0 Projects 0 Security Insights Settings
-basic_django_app/.gitignore
-@AndrewMEntwistle AndrewMEntwistle Created gitignore
-96f31fd 2 days ago
-105 lines (84 sloc)  1.17 KB
+.idea/workspace.xml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
